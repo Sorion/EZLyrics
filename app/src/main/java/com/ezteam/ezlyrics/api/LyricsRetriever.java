@@ -1,4 +1,4 @@
-package com.ezteam.ezlyrics;
+package com.ezteam.ezlyrics.api;
 
 import java.io.InputStream;
 import java.net.HttpURLConnection;
