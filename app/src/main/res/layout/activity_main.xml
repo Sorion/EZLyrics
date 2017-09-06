@@ -7,21 +7,40 @@
     android:layout_height="match_parent"
     tools:context="com.ezteam.ezlyrics.MainActivity">
 
-    <SearchView
-        android:id="@+id/searchbar"
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:queryHint="What are you searching for?"
-        android:maxWidth="1000dp">
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorDark"
+        />
 
-    </SearchView>
+    <com.miguelcatalan.materialsearchview.MaterialSearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:searchBackground="@color/colorDark"
+        app:searchSuggestionBackground="@color/colorDark"
+        app:searchCloseIcon="@drawable/ic_action_navigation_close_inverted"
+        app:searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"
+        app:searchSuggestionIcon="@drawable/ic_suggestion"
+        android:textColor="@color/colorWhite"
+        />
 
     <ListView
+        android:id="@+id/request_result"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar"
+        android:divider="@color/colorDarkGrey"
+        android:dividerHeight="1dp"
+        />
+
+    <!--<ListView
         android:id="@+id/search_result"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="50dp">
 
-    </ListView>
+    </ListView>-->
 
 </android.widget.RelativeLayout>
