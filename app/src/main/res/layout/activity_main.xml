@@ -5,7 +5,8 @@
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.ezteam.ezlyrics.MainActivity">
+    tools:context="com.ezteam.ezlyrics.MainActivity"
+    android:background="@color/colorDark">
 
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolbar"
@@ -18,7 +19,7 @@
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:searchBackground="@color/colorDark"
+        app:searchBackground="@color/colorDarkGrey"
         app:searchSuggestionBackground="@color/colorDark"
         app:searchCloseIcon="@drawable/ic_action_navigation_close_inverted"
         app:searchBackIcon="@drawable/ic_action_navigation_arrow_back_inverted"

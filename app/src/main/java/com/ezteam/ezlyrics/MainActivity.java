@@ -1,5 +1,6 @@
 package com.ezteam.ezlyrics;
 
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Home");
+        getSupportActionBar().setTitle(getString(R.string.toolbar_title_home));
         toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
 
         listView = (ListView)findViewById(R.id.request_result);
