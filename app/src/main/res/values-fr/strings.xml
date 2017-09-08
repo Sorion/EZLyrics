@@ -2,4 +2,6 @@
 <resources>
     <string name="app_name">EZLyrics</string>
     <string name="toolbar_title_home">Accueil</string>
+    <string name="options_settings">Paramètres</string>
+    <string name="options_about">A Propos</string>
 </resources>
